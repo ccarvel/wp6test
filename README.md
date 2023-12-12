@@ -1,13 +1,14 @@
 # README
-This is mostly the official WordPress Docker [repo](https://github.com/docker-library/wordpress) with modifications to their [PHP8.1 Dockerfile](https://github.com/docker-library/wordpress/blob/ac65dab91d64f611e4fa89b5e92903e163d24572/latest/php8.1/fpm/Dockerfile) to install git, curl, and wget into the WordPress container.
+This is a Dockerfile with a PHP8.2-FPM base to build WordPress, which can be accomplished with the docker-compose.yml file here.
 
-In addition to the slight mods to the Dockerfile, I have created a docker-compose.yml file that adds a phpMyAdmin service in addition to WordPress and MySQL.
+In addition to the slight mods to the Dockerfile (additional installations of git, wget, curl), I have created a docker-compose.yml file that uses Nginx to serve the WordPress content and adds MySQL and phpMyAdmin services.
 
 **Versions**  
 Versions of these images are:  
-WordPress 6.4.2 with PHP 8.1  
+WordPress 6.4.2 with PHP 8.2-FPM  
 MySQL 5.7  
-phpMyAdmin 5.2.1  
+phpMyAdmin 5.2.1
+Nginx 1.25.3
 
 **Running**   
 To run, install and start Docker Desktop;  
@@ -17,12 +18,18 @@ run:
 ```
 docker-compose up -d
 ```
+To verify the WordPress container is successfully running, open a browser and visit:   
+```
+http://localhost
+```
+From there you should be able to install WordPress. 
 
 **Container Names and Entering**  
 Containers are named and include their version numbers:   
 wp642 (WordPress)  
 mysql57 (MySQL)   
 phpmyadmin521 (phpMyAdmin)
+nginx1253 (Nginx)  
 
 To enter those containers simply execute
 ```
