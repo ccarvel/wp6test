@@ -19,7 +19,7 @@ docker-compose up -d
 ```
 
 **Container Names and Entering**  
-Containers are named and include their version numbers:
+Containers are named and include their version numbers:   
 wp642 (WordPress)  
 mysql57 (MySQL)   
 phpmyadmin521 (phpMyAdmin)
