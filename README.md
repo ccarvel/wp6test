@@ -7,7 +7,7 @@ In addition to the slight mods to the Dockerfile (additional installations of gi
 Versions of these images are:  
 WordPress 6.4.2 with PHP 8.2-FPM  
 MySQL 5.7  
-phpMyAdmin 5.2.1
+phpMyAdmin 5.2.1  
 Nginx 1.25.3
 
 **Running**   
