@@ -29,7 +29,8 @@ Containers are named and include their version numbers:
 wp642 (WordPress)  
 mysql57 (MySQL)   
 phpmyadmin521 (phpMyAdmin)   
-nginx1253 (Nginx)  
+nginx1253 (Nginx)   
+
 
 To enter those containers simply execute
 ```
